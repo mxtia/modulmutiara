@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:gravity="center_horizontal"
+
+    android:weightSum="1">
+
+    <RadioGroup android:id="@+id/RadioGroup01"
+        android:layout_width="wrap_content"
+        android:layout_height="250dp"
+
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:layout_weight="0.86"
+        android:layout_gravity="center_vertical"
+        android:layout_below="@+id/textView"
+
+        android:layout_alignStart="@+id/textView"
+        android:layout_marginTop="38dp">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:text="Cayon"
+            android:id="@+id/rdb8"
+            android:checked="false"
+            android:layout_below="@+id/textView"
+
+            android:layout_alignStart="@+id/RadioGroup01" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yellow"
+            android:id="@+id/rdb5"
+
+            android:checked="false"
+            android:layout_below="@+id/rdb4"
+            android:layout_alignStart="@+id/RadioGroup01" />
+
+        <RadioButton
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dark"
+            android:id="@+id/rdb6"
+            android:checked="false"
+
+            android:layout_above="@+id/rdb7"
+            android:layout_alignStart="@+id/rdb7" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pink"
+
+            android:id="@+id/rdb7"
+            android:checked="false"
+            android:layout_above="@+id/rdb2"
+
+            android:layout_alignStart="@+id/rdb2" />
+
+        <RadioButton
+            android:text="Green"
+            android:id="@+id/rdb2"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignStart="@+id/btnexit">
+        </RadioButton>
+
+        <RadioButton
+
+            android:text="Blue"
+            android:id="@+id/rdb3"
+
+            android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/RadioGroup01" android:layout_alignStart="@+id/RadioGroup01">
+        </RadioButton>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="White"
+            android:id="@+id/rdb4"
+            android:checked="false"
+            android:layout_below="@+id/textView"
+            android:layout_alignEnd="@+id/textView" />
+
+        <RadioButton
+
+            android:text="Red"
+            android:id="@+id/rdb1"
+
+            android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/rdb3" android:layout_alignStart="@+id/rdb6">
+        </RadioButton>
+
+    </RadioGroup>
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pilih Warna"
+        android:gravity="center"
+        android:textSize="24dp"
+
+        android:textStyle="bold"
+        android:id="@+id/textView"
+        android:background="#03feed"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Keluar"
+
+        android:id="@+id/btnexit"
+        android:layout_alignParentBottom="true"
+
+        android:layout_marginBottom="35dp"
+        android:layout_alignEnd="@+id/txtwarna" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Warna yang dipilih"
+        android:gravity="center"
+
+        android:id="@+id/txtwarna"
+        android:textStyle="bold"
+        android:textSize="17dp"
+        android:layout_above="@+id/btnexit"
+        android:layout_alignParentStart="true"
+
+        android:layout_marginBottom="50dp" />
+
+</RelativeLayout>
